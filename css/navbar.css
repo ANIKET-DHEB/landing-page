@@ -1,3 +1,4 @@
+
 .site-header {
     width: 100%;
     position: sticky;
@@ -18,37 +19,21 @@
     justify-content: space-between;
 }
 
+/* Logo */
 .brand-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
     text-decoration: none;
     flex-shrink: 0;
 }
 
-.brand-icon {
-    width: 42px;
-    height: 42px;
-    display: grid;
-    place-items: center;
-    background: #a47a46;
-    color: #ffffff;
-    font-family: "Playfair Display", serif;
-    font-size: 25px;
+.brand-logo img {
+    width: 170px;
+    height: auto;
+    object-fit: contain;
 }
 
-.brand-name {
-    font-family: "Playfair Display", serif;
-    font-size: 23px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #222222;
-}
-
-.brand-name span {
-    color: #a47a46;
-}
-
+/* Navigation links */
 .nav-links {
     display: flex;
     align-items: center;
@@ -69,6 +54,7 @@
     color: #a47a46;
 }
 
+/* Enquiry button */
 .nav-enquiry {
     padding: 14px 22px;
     border: 1px solid #a47a46;
@@ -84,6 +70,8 @@
     background: transparent;
     color: #a47a46;
 }
+
+/* Mobile menu button */
 .menu-toggle {
     display: none;
     width: 45px;
@@ -104,7 +92,6 @@
     display: block;
     width: 25px;
     height: 3px;
-    margin: 0;
     background-color: #222222;
     border-radius: 3px;
     transition: all 0.3s ease;
@@ -121,18 +108,16 @@
 .menu-toggle.active span:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
 }
-@media screen and (max-width: 900px) {
 
+/* Tablet and mobile */
+@media screen and (max-width: 900px) {
     .navbar {
         position: relative;
-        width: 100%;
         padding: 0 20px;
     }
 
     .menu-toggle {
-        display: flex !important;
-        visibility: visible;
-        opacity: 1;
+        display: flex;
     }
 
     .nav-links {
@@ -152,7 +137,7 @@
     }
 
     .nav-links.active {
-        display: flex !important;
+        display: flex;
     }
 
     .nav-links li {
@@ -171,21 +156,15 @@
     }
 }
 
+/* Small mobile screens */
 @media screen and (max-width: 480px) {
-
     .navbar {
         min-height: 70px;
         padding: 0 12px;
     }
 
-    .brand-name {
-        font-size: 18px;
-    }
-
-    .brand-icon {
-        width: 36px;
-        height: 36px;
-        font-size: 21px;
+    .brand-logo img {
+        width: 145px;
     }
 
     .menu-toggle {
