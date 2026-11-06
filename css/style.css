@@ -1,0 +1,38 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #252525;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+button,
+input,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
